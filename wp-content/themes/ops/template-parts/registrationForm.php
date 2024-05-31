@@ -1,0 +1,63 @@
+<?php
+/**
+ * Template Name: template-registrationform
+ *
+ * @package WordPress
+ * @subpackage ops
+ * @since  1.0
+ */
+get_header(); ?>
+<section class="gradient-custom py-5">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form action="#" method="post" id="registrationForm">
+              <div class="mb-4 row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="name" class="form-label">Name:</label>
+                  <input type="text" id="name" name="name" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="dob" class="form-label">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="address" class="form-label">Permanent Address:</label>
+                  <textarea id="address" name="address" class="form-control form-control-lg" rows="1" required></textarea>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="contact" class="form-label">Contact:</label>
+                  <input type="tel" id="contact" name="contact" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" id="email" name="email" class="form-control form-control-lg" required />
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="position" class="form-label">Position (current or last held):</label>
+                  <input type="text" id="position" name="position" class="form-control form-control-lg" required />
+                </div>
+              </div>
+
+             
+
+              <div class="mt-4 pt-2">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php get_footer(); ?>
