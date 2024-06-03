@@ -68,7 +68,7 @@
                 href="<?php echo esc_url(home_url('/home/projects')); ?>">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-primary shadow-sm hover-effect menu-button" href="#contact">Get In Touch</a>
+              <a class="nav-link btn btn-primary shadow-sm hover-effect menu-button" href="https://partners.opsol.in/login">Login</a>
             </li>
           </ul>
         </div>
