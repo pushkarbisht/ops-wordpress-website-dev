@@ -45,12 +45,7 @@ get_header(); ?>
           <h2 class="marker marker-center">Our Services</h2>
         </div>
         <div class="text-center">
-          <p class="mx-auto mb-3">OPS GROUP carry on the business of Providing Support Services whether information
-            technology enabled
-            or otherwise, including but not limited to providing back office services, enterprise content and data
-            services, job portal development, accounting, legal services, business analysis, business intelligence ,
-            advertising, public relations, business, commercial and administrative services in India and abroad. </p>
-          <p class="mx-auto mb-3">
+        <p class="mx-auto mb-3">
             The One Point Solution (OPS) Group is a leading Research Center dedicated to
             conducting cutting-edge Research Projects. OPS Group is a multidisciplinary team
             of social scientists, engineers, and researchers who are committed to making a
@@ -62,6 +57,12 @@ get_header(); ?>
             committed to training the next generation students. We offer a variety of vocational
             and training programs and opportunities for students and learners.
           </p>
+          <p class="mx-auto mb-3">OPS GROUP carry on the business of Providing Support Services whether information
+            technology enabled
+            or otherwise, including but not limited to providing back office services, enterprise content and data
+            services, job portal development, accounting, legal services, business analysis, business intelligence ,
+            advertising, public relations, business, commercial and administrative services in India and abroad. </p>
+          
         </div>
       </div>
     </div>
@@ -95,7 +96,7 @@ get_header(); ?>
                 $service_fields = get_field('services');
                 if (!empty($service_fields)) {
                   ?>
-                  <div class="col-md-4 pt-2 pt-md-0">
+                  <div class="col-md-3 pt-2 pt-md-0">
                     <a class="text-decoration-none" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
                       <div class=" text-center" data-aos="fade-up" data-aos-delay="100">
                         <img class="mb-2" src="<?php echo $service_fields['image']['sizes']['medium_large']; ?>"
@@ -146,7 +147,8 @@ get_header(); ?>
             ?>
             <div class="container px-3 h-100">
               <div class="row p-3 h-100">
-                <div class="col-lg-6 d-flex align-items-center">
+                <!-- <div class="col-sm-6 d-flex align-items-center"> -->
+                <div class="col-sm-6">
                   <div class="d-flex flex-column d-lg-block justify-content-center align-items-center h-1000">
                     <div lass="d-flex justify-content-center">
                       <img class="img-fluid" src="<?php echo $professional_fields['image']['sizes']['medium_large']; ?>"
@@ -156,7 +158,7 @@ get_header(); ?>
                     <h4 class="pt-2 h6 d-block d-md-none"><?php echo $professional_fields['title']; ?></h4>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                   <div class="d-flex justify-content-center justify-content-lg-end align-items-center h-100">
                     <button class="border-0 rounded px-4 py-2 nav-link btn btn-primary shadow-sm' hover-effect menu-button"><a
                         href="<?php echo esc_url(home_url('/home/registration-form')); ?>" class='text-decoration-none'>JOIN
