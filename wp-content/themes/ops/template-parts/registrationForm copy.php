@@ -8,14 +8,14 @@
  */
 get_header(); ?>
 <section class="gradient-custom py-5">
-  <div class="container h-100">
+  <div class="container py-5 h-100">
     <div class="row justify-content-center align-items-center h-100">
-      <div class="col-12">
-        <div class="shadow-2-strong card-registration">
-          <div class="">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form (Professional Network)</h3>
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
             <form action="#" method="post" id="registrationForm">
-              <div class=" row">
+              <div class="mb-4 row">
                 <div class="col-lg-4 col-md-6 mb-4">
                   <label for="name" class="form-label">Name:</label>
                   <input type="text" id="name" name="name" class="form-control form-control-lg" required />
@@ -24,7 +24,10 @@ get_header(); ?>
                   <label for="dob" class="form-label">Date of Birth:</label>
                   <input type="date" id="dob" name="dob" class="form-control form-control-lg" required />
                 </div>
-               
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <label for="address" class="form-label">Permanent Address:</label>
+                  <textarea id="address" name="address" class="form-control form-control-lg" rows="1" required></textarea>
+                </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                   <label for="contact" class="form-label">Contact:</label>
                   <input type="tel" id="contact" name="contact" class="form-control form-control-lg" required />
@@ -38,14 +41,7 @@ get_header(); ?>
                   <input type="text" id="position" name="position" class="form-control form-control-lg" required />
                 </div>
               </div>
-              <div class="row">
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <label for="address" class="form-label">Permanent Address:</label>
-                  <textarea id="address" name="address" class="form-control form-control-lg" rows="1" required></textarea>
-                </div>
-              </div>
-              <div class="form-group" id="otp_section_custom" style="display: none;">
+              <div class="form-group my-2" id="otp_section_custom" style="display: none;">
                 <label for="otp_custom" class="form-label fw-bolder">OTP</label>
                 <input class="form-control" type="text" id="otp" name="otp">
               </div>
