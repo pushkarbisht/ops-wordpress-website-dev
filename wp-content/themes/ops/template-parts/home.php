@@ -51,7 +51,7 @@ get_header(); ?>
             services, job portal development, accounting, legal services, business analysis, business intelligence ,
             advertising, public relations, business, commercial and administrative services in India and abroad. </p>
           <p class="mx-auto mb-3">
-            The One Point Solution (OPS) Group is a leading Consultancy Center dedicated to
+            The One Point Solution (OPS) Group is a leading Research Center dedicated to
             conducting cutting-edge Research Projects. OPS Group is a multidisciplinary team
             of social scientists, engineers, and researchers who are committed to making a
             positive impact on the world through our Research Projects. Our research and
