@@ -202,13 +202,13 @@ get_header(); ?>
               </div>
               <form id="contactusform_custom" method="POST">
                 <div class="form-group my-2">
-                  <label for="email_custom" class="form-label fw-bolder">Email</label>
-                  <input class="form-control" type="email" id="registration_email_custom" name="email_custom" required
+                  <label for="email" class="form-label fw-bolder">Email</label>
+                  <input class="form-control" type="email" id="email" name="email" required
                     placeholder="xyz@gmail.com">
                 </div>
                 <div class="form-group my-2">
-                  <label for="purpose_custom" class="form-label fw-bolder">Purpose</label>
-                  <select class="form-control" required id="purpose_custom" name="purpose_custom">
+                  <label for="purpose" class="form-label fw-bolder">Purpose</label>
+                  <select class="form-control" required id="purpose" name="purpose">
                     <option value="">----Select----</option>
                     <option value="Professional Network">Professional Network</option>
                     <option value="IT Solution">IT Solution</option>
@@ -218,18 +218,22 @@ get_header(); ?>
                   </select>
                 </div>
                 <div class="form-group my-2">
-                  <label for="type_custom" class="form-label fw-bolder">Type</label>
-                  <select class="form-control" required id="type_custom" name="type_custom">
+                  <label for="type" class="form-label fw-bolder">Type</label>
+                  <select class="form-control" required id="type" name="type">
                     <option value="">----Select----</option>
                     <option value="Individual">Individual</option>
                     <option value="Company">Company</option>
                   </select>
                 </div>
                 <div class="form-group my-2" id="otp_section_custom" style="display: none;">
-                  <label for="otp_custom" class="form-label fw-bolder">OTP</label>
-                  <input class="form-control" type="text" id="registration_otp_custom" name="otp_custom">
+                  <label for="otp" class="form-label fw-bolder">OTP</label>
+                  <input class="form-control" type="text" id="otp" name="otp">
                 </div>
-                <div class="form-group my-2" id="resend_otp_custom" style="display: none;">
+
+                <div class="form-group my-2" id="random_error_custom" style="color: red; display: none;">
+                <p>Error!! Please try again.</p>
+              </div>
+                <!-- <div class="form-group my-2" id="resend_otp_custom" style="display: none;">
                   <p>The last OTP was expired. Please enter the new OTP sent to your email address.</p>
                 </div>
                 <div class="form-group my-2" id="wrong_otp_custom" style="color: red; display: none;">
@@ -240,11 +244,11 @@ get_header(); ?>
                 </div>
                 <div class="form-group my-2" id="already_registered_custom" style="color: red; display: none;">
                   <p>This email is already registered</p>
-                </div>
+                </div> -->
                 <button class="btn btn-primary mt-2" id="get_otp_button" type="button">Get OTP</button>
                 <button class="btn btn-primary mt-2" id="enabled_submit_button_custom" type="submit"
                   style="display: none;">Register</button>
-                <button class="btn btn-primary mt-2" id="reset_button_custom" type="reset">Reset</button>
+                <!-- <button class="btn btn-primary mt-2" id="reset_button_custom" type="reset">Reset</button> -->
                 <button class="btn btn-primary mt-2" id="disabled_submit_button_custom" type="button" disabled
                   style="display: none;">
                   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
