@@ -200,7 +200,7 @@ get_header(); ?>
               <div class="" id="success_message_custom">
                 <!-- Success message will be updated here -->
               </div>
-              <form id="contactusform_custom" method="POST">
+              <form id="registrationForm" method="POST">
                 <div class="form-group my-2">
                   <label for="email" class="form-label fw-bolder">Email</label>
                   <input class="form-control" type="email" id="email" name="email" required
