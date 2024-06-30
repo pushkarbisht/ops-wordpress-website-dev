@@ -52,6 +52,8 @@
         alert("Please enter OTP");
       }
       else{
+        $("#disabled_submit_button_custom").show();
+        $("#enabled_submit_button_custom").hide();
         var formData = {
           name: $("#name").val(),
           dob: $("#dob").val(),
@@ -71,8 +73,11 @@
           dataType: "json",
           success: function (response) {
             console.log("Registration Success:", response);
+            $("#disabled_submit_button_custom").hide();
+            $("#enabled_submit_button_custom").hide();
             $("#success_message_custom").empty().html('<p class="success">' + response.message + '</p>');
             $("#random_error_custom").hide();
+            $("#registrationForm").hide();
           },
           error: function (xhr, status, error) {
             
@@ -86,6 +91,8 @@
           catch(err){
 
           }
+          $("#disabled_submit_button_custom").hide();
+          $("#enabled_submit_button_custom").show();
             $("#success_message_custom").empty();
             $("#random_error_custom").show().find("p").text(error_message);
           }

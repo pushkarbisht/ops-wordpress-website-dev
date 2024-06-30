@@ -45,6 +45,7 @@ get_header(); ?>
                   <textarea id="address" name="address" class="form-control form-control-lg" rows="1" required></textarea>
                 </div>
               </div>
+              <input type="hidden" id="purpose" name="purpose"  value="Professional Network" class="form-control form-control-lg" required />
               <div class="form-group" id="otp_section_custom" style="display: none;">
                 <label for="otp_custom" class="form-label fw-bolder">OTP</label>
                 <input class="form-control" type="text" id="otp" name="otp">
